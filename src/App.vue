@@ -7,18 +7,13 @@
         <li v-for="item in items" v-bind:class="{finished:item.isFinished}" v-on:click="todoThis(item)">{{item.label}}</li>
       </ul>
     </div>
-    <Hello></Hello>
   </div>
 </template>
 
 <script>
-import Hello from './components/hello.vue';
 import Store from './store.js';
 export default {
   name: 'app',
-  components:{
-    Hello
-  },
   data () {
     return {
       title:' Youngzhang want to do!',
